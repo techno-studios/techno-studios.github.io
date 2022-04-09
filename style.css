@@ -1,11 +1,8 @@
-/* Starting section of code that may not be changed. */
 @font-face {
 	font-family: RobotoMono;
 	src: url(fonts/RobotoMono-Regular.ttf);
-/* end */
-
-/* Starting navbar code */
-.navbar-parent {
+}
+ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -14,11 +11,19 @@
 	background-color: #333333;
 }
 
-.navbar-child {
+body {
+	font-family: RobotoMono;
+	background: rgb(255,0,0);
+	background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(156,0,0,1) 100%);
+	text-align: center;
+	color: white;
+}
+
+li {
 	float: left;
 }
 
-.navbar-child-link {
+li a {
 	display: block;
 	color: #999999;
 	text-align: center;
@@ -27,26 +32,17 @@
 	margin-top: 3px;
 }
 
-.navbar-child-link:hover:not(.active) {
+li a:hover:not(.active) {
 	background-color: #2723AD;
 }
 
-.navbar-child-link.active {
+li a.active {
 	color: white;
 	background-color: #FF0000;
 }
 
-.navbar-child-image {
+li img {
 	margin-left: 3px;
 	margin-top: 3px;
 	margin-right: 3px;
-}
-/* end */
-
-body {
-	font-family: RobotoMono;
-	background: rgb(255,0,0);
-	background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(156,0,0,1) 100%);
-	text-align: center;
-	color: white;
 }
